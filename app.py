@@ -1,7 +1,9 @@
 import streamlit as st
 from typing import TypedDict, List
-from langchain_core.messages import HumanMessage, AIMessage
-from langchain_core.prompts import ChatPromptTemplate
+from langchain.schema import HumanMessage, AIMessage
+from langchain.prompts import ChatPromptTemplate
+from langchain_groq import ChatGroq
+
 from langchain_groq import ChatGroq
 
 # ---- TypedDict for state ----
