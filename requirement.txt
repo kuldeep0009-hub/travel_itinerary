@@ -1,6 +1,6 @@
 streamlit
 gradio
-langchain
+langchain==1.0.0
 langchain-openai
 langchain-groq
 langchain_core
