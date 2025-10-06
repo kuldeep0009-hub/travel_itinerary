@@ -6,14 +6,14 @@ from langchain_groq import ChatGroq
 
 from langchain_groq import ChatGroq
 
-# ---- TypedDict for state ----
+
 class PlannerState(TypedDict):
     messages: List[HumanMessage | AIMessage]
     city: str
     interests: List[str]
     itinerary: str
 
-# ---- Functions ----
+
 def input_city(city: str, state: PlannerState) -> PlannerState:
     return {
         **state,
